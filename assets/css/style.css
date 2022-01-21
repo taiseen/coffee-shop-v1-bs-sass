@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 1 Jan 2022 */
+
+* {
+    margin            : 0;
+    padding           : 0;
+    border            : 0;
+    outline           : none;
+    list-style        : none;
+    text-decoration   : none;
+    scroll-behavior   : smooth;
+    box-sizing        : border-box;
+    font-family       : 'Nunito', sans-serif;
+    transition        : all .1s linear;
+    /* overflow       : hidden; */
+    /* user-select    : none; */
+}
+
+:root {
+    /* ====== Colors ====== */
+    --color-bg   : #;
+    --color-light: #;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
