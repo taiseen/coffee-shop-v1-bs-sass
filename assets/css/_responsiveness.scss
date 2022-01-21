@@ -4,10 +4,13 @@
         scroll-padding-top: 8rem;
     }
 
-    #menu-btn {
-        // display: inline-block;
+    .home h3 {
+        font-size: 4rem;
     }
 
+    section {
+        padding: 3rem 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -55,6 +58,13 @@
         }
     }
 
+    .login-form form {
+        padding: 3rem 2rem;
+
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
 }
 
 @media (max-width: 450px) {

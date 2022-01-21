@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/coffee.png" type="image/x-icon">
 
+    <!-- font-awesome | CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Bootstrap JS | CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <script src="https://kit.fontawesome.com/1f45fef13f.js" defer></script>
-    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <!-- <script src="./assets/js/bootstrap.min.js" defer></script>  -->
     <script src="./assets/js/script.js" defer></script>
-
 
     <title>Coffee</title>
 </head>
@@ -23,9 +26,85 @@
 <body>
     <!-- 21 - Jan - 2022  -->
 
-    <h1>testing... Hello HTML</h1>
+    <header class="header fixed-top">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <a href="#" class="logo mr-auto">
+                    <i class="fas fa-mug-hot"></i> coffee
+                </a>
+
+                <nav class="nav">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#menu">menu</a>
+                    <a href="#gallery">gallery</a>
+                    <a href="#reviews">reviews</a>
+                    <a href="#contact">contact</a>
+                    <a href="#blogs">blogs</a>
+                </nav>
+
+                <div class="icons">
+                    <!-- d-inline d-md-none -->
+                    <div class="fas fa-bars" id="menu-btn"></div>
+                    <div class="fas fa-user" id="login-btn"></div>
+                </div>
+
+            </div>
 
 
+        </div>
+    </header>
+
+
+    <div class="login-form">
+
+        <form action="#">
+
+            <div id="closeBtn" class="fas fa-times"></div>
+
+            <a href="#" class="logo mr-auto">
+                <i class="fas fa-mug-hot"></i> coffee
+            </a>
+
+            <h3>lets start a new great day</h3>
+
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <div class="flex">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me"> Remember Me </label>
+                <a href="#">Forgot password</a>
+            </div>
+
+            <input type="submit" value="login now" class="link-btn">
+            <p class="account">Don't have an account? <a href="#">Create One!</a></p>
+        </form>
+
+    </div>
+
+
+
+    <section class="home" id="home">
+
+        <div class="container">
+            <div class="row align-items-center text-center text-md-left min-vh-100">
+                <div class="col-md-6">
+                    <span>coffee house</span>
+                    <h3>start your day with our coffee</h3>
+                    <a href="#" class="link-btn">get started</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        
+    </section>
 </body>
 
 </html>

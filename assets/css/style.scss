@@ -62,9 +62,24 @@ section {
 }
 
 .home {
-    background         : url(../img/home-bg.jpg) no-repeat;
+    background         :  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/home-bg.jpg) no-repeat;
     background-size    : cover;
     background-position: center;
+
+    span {
+        @include fontStyle(2.5rem, $white);
+    }
+
+
+    h3 {
+        padding: 1rem 0;
+        @include fontStyle(6rem, $white);
+    }
+
+    .link-btn {
+        color       : $white;
+        border-color: $white;
+    }
 }
 
 @import 'header';
