@@ -8,22 +8,65 @@
     border            : 0;
     outline           : none;
     list-style        : none;
-    text-decoration   : none;
+    text-decoration   : none !important;
     scroll-behavior   : smooth;
     box-sizing        : border-box;
     font-family       : 'Nunito', sans-serif;
     transition        : all .1s linear;
-    /* overflow       : hidden; */
     /* user-select    : none; */
 }
 
-:root {
-    /* ====== Colors ====== */
-    --color-bg   : #;
-    --color-light: #;
+@import 'variables';
+
+html {
+    font-size         : 62.5%;
+    overflow-x        : hidden;
+    scroll-padding-top: 6rem;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+    }
 }
 
-
-@media screen and (max-width: 768px) {
-    
+section {
+    padding: 5rem 1rem;
 }
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-3rem);
+        opacity  : 0;
+    }
+}
+
+.link-btn {
+    margin-top: 1rem;
+    padding   : 1rem 3rem;
+    display   : inline-block;
+    border    : $border;
+    cursor    : pointer;
+    @include fontStyle(1.7rem, $main-color);
+
+    &:hover {
+        background-color: $main-color;
+        color           : $white;
+    }
+}
+
+.home {
+    background         : url(../img/home-bg.jpg) no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+@import 'header';
+@import 'loginForm';
+@import 'responsiveness';

@@ -1,0 +1,39 @@
+.header {
+    padding: 4rem 0;
+    z-index: 100;
+
+    /* By scrolling header background color change */
+    &.userScroll {
+        padding         : 2rem 0;
+        transition      : .5s ease;
+        background-color: $main-color;
+    }
+
+    .logo {
+        @include fontStyle(2.5rem, $white);
+        font-weight: border;
+    }
+
+    .nav {
+        a {
+            @include fontStyle(2rem, $white);
+            margin-right: 2rem;
+
+            &:hover {
+                text-decoration      : underline !important;
+                text-underline-offset: .5rem;
+            }
+        }
+    }
+
+    .icons div {
+        @include fontStyle(2.5rem, $white);
+        margin-left: 2rem;
+        cursor     : pointer;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+}

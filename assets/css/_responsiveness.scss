@@ -1,0 +1,64 @@
+@media (max-width: 991px) {
+    html {
+        font-size         : 55%;
+        scroll-padding-top: 8rem;
+    }
+
+    #menu-btn {
+        // display: inline-block;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 4rem 2rem;
+
+        &.userScroll {
+            padding: 2rem;
+        }
+
+        #menu-btn {
+            display: inline-block;
+
+            &.fa-times {
+                transform: rotate(180deg);
+            }
+        }
+
+
+        .nav {
+            position        : absolute;
+            top             : 99%;
+            left            : 0;
+            right           : 0;
+            background-color: $white;
+            flex-flow       : column;
+            padding         : 1rem 0;
+            transition      : .2s ease;
+            clip-path       : polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            /* effect active by JS | when user click */
+            &.userClick {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a {
+                text-align      : center;
+                margin          : 1rem 2rem;
+                color           : $white;
+                border-radius   : .5rem;
+                padding         : 0.5rem;
+                background-color: rgba(81, 42, 16, .8);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
