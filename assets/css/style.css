@@ -61,6 +61,33 @@ section {
     color: #FFF;
     border-color: #FFF; }
 
+.footer {
+  text-align: center; }
+  .footer .logo {
+    font-size: 3rem;
+    color: #512a10;
+    font-weight: bolder; }
+  .footer .credit {
+    margin: 2rem 0;
+    color: #222;
+    font-size: 2rem;
+    text-transform: capitalize; }
+    .footer .credit span {
+      text-decoration: underline !important; }
+  .footer .share {
+    margin-top: 2rem; }
+    .footer .share a {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      border: 0.1rem solid #512a10;
+      margin: 0 .5rem;
+      font-size: 3rem;
+      color: #512a10; }
+      .footer .share a:hover {
+        background-color: #512a10;
+        color: #FFF; }
+
 @keyframes fadeIn {
   0% {
     transform: translateY(-2.5rem);
@@ -369,8 +396,10 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem; }
     .blogs .box-container .box {
+      border: 0.1rem solid #512a10;
       margin-bottom: 2rem; }
       .blogs .box-container .box:hover {
+        border: 0;
         box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
         background-color: #FFF; }
         .blogs .box-container .box:hover .image {
@@ -411,6 +440,33 @@ section {
           .blogs .box-container .box .icons span i {
             padding-right: .5rem;
             color: #512a10; }
+
+.newsletter {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/newsletter-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .newsletter h3 {
+    font-size: 4rem;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .newsletter p {
+    font-size: 2rem;
+    color: #FFF;
+    padding: 1rem 0; }
+  .newsletter form {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 60rem;
+    background-color: #FFF;
+    display: flex; }
+    .newsletter form .link-btn {
+      margin-top: 0; }
+    .newsletter form .email {
+      width: 100%;
+      padding: 0 1.4rem;
+      font-size: 1.6rem; }
 
 @media (max-width: 991px) {
   html {

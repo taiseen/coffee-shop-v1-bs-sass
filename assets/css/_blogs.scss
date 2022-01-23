@@ -8,9 +8,11 @@
 
         .box {
 
+            border       : $border;
             margin-bottom: 2rem;
 
             &:hover {
+                border          : 0;
                 box-shadow      : $box-shadow;
                 background-color: $white;
 
