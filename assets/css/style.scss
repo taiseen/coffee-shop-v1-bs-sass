@@ -81,9 +81,6 @@ section {
     }
 }
 
-
-
-
 @keyframes fadeIn {
     0% {
         transform: translateY(-2.5rem);
@@ -97,4 +94,6 @@ section {
 @import 'menu';
 @import 'gallery';
 @import 'reviews';
+@import 'contact';
+@import 'blogs';
 @import 'responsiveness';

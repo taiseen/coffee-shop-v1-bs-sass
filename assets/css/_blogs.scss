@@ -1,0 +1,74 @@
+.blogs {
+
+    background-color: $light-bg;
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+
+            margin-bottom: 2rem;
+
+            &:hover {
+                box-shadow      : $box-shadow;
+                background-color: $white;
+
+                .image {
+                    padding: 2rem;
+                }
+
+                .icons {
+                    border-top: $border;
+                }
+            }
+
+
+            .image {
+                height  : 25rem;
+                overflow: hidden;
+
+                img {
+                    height    : 100%;
+                    width     : 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .content {
+
+                text-align: center;
+                padding   : 2rem;
+
+                h3 {
+                    @include titleText(2rem);
+                }
+
+                p {
+                    padding: 1rem 0;
+                    @include paragraph(1.5rem);
+                }
+            }
+
+            .icons {
+                margin-top      : 1rem;
+                padding         : 1rem;
+                background-color: $white;
+                display         : flex;
+                justify-content : space-between;
+                align-items     : center;
+
+                span {
+                    @include titleText(1.4rem);
+
+                    i {
+                        padding-right: .5rem;
+                        color        : $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,73 @@
+.contact {
+
+    .contact-info-container {
+        @include grid(30rem);
+        margin-bottom: 3rem;
+
+        .box {
+            border    : $border;
+            padding   : 3rem 2rem;
+            text-align: center;
+
+            &:hover i {
+                background-color: $main-color;
+                color           : $white;
+            }
+
+            i {
+                width        : 6rem;
+                height       : 6rem;
+                line-height  : 6rem;
+                font-size    : 2rem;
+                color        : $main-color;
+                border       : $border;
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                @include titleText(2rem);
+            }
+
+            p {
+                padding-bottom: 1rem;
+                @include paragraph(1.5rem);
+            }
+        }
+
+    }
+
+    .row {
+
+        form {
+
+            h3 {
+                text-align    : center;
+                padding-bottom: .7rem;
+                @include titleText(2.5rem);
+            }
+
+            textarea {
+                resize: none;
+                height: 12rem;
+            }
+
+            .box {
+                font-size: 1.8rem;
+                width    : 100%;
+                border   : $border;
+                margin   : .7rem 0;
+                padding  : 1.2rem 1.4rem;
+
+                &:focus {
+                    background-color: $main-color;
+                    color           : $white;
+                }
+
+                &::placeholder {
+                    color: $main-color;
+                }
+            }
+        }
+
+    }
+}

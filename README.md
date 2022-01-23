@@ -11,3 +11,4 @@
 - Window Scroll Effect
 - Div Opacity Hover Effect 
 - Responsiveness
+- Google Map add

@@ -311,6 +311,107 @@ section {
           font-size: 1.7rem;
           color: #512a10; }
 
+.contact .contact-info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem; }
+  .contact .contact-info-container .box {
+    border: 0.1rem solid #512a10;
+    padding: 3rem 2rem;
+    text-align: center; }
+    .contact .contact-info-container .box:hover i {
+      background-color: #512a10;
+      color: #FFF; }
+    .contact .contact-info-container .box i {
+      width: 6rem;
+      height: 6rem;
+      line-height: 6rem;
+      font-size: 2rem;
+      color: #512a10;
+      border: 0.1rem solid #512a10;
+      margin-bottom: 1.5rem; }
+    .contact .contact-info-container .box h3 {
+      color: #222;
+      font-size: 2rem;
+      text-transform: capitalize; }
+    .contact .contact-info-container .box p {
+      padding-bottom: 1rem;
+      color: #222;
+      font-size: 1.5rem;
+      line-height: 2;
+      margin-bottom: 0; }
+.contact .row form h3 {
+  text-align: center;
+  padding-bottom: .7rem;
+  color: #222;
+  font-size: 2.5rem;
+  text-transform: capitalize; }
+.contact .row form textarea {
+  resize: none;
+  height: 12rem; }
+.contact .row form .box {
+  font-size: 1.8rem;
+  width: 100%;
+  border: 0.1rem solid #512a10;
+  margin: .7rem 0;
+  padding: 1.2rem 1.4rem; }
+  .contact .row form .box:focus {
+    background-color: #512a10;
+    color: #FFF; }
+  .contact .row form .box::placeholder {
+    color: #512a10; }
+
+.blogs {
+  background-color: #EEE; }
+  .blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem; }
+    .blogs .box-container .box {
+      margin-bottom: 2rem; }
+      .blogs .box-container .box:hover {
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        background-color: #FFF; }
+        .blogs .box-container .box:hover .image {
+          padding: 2rem; }
+        .blogs .box-container .box:hover .icons {
+          border-top: 0.1rem solid #512a10; }
+      .blogs .box-container .box .image {
+        height: 25rem;
+        overflow: hidden; }
+        .blogs .box-container .box .image img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      .blogs .box-container .box .content {
+        text-align: center;
+        padding: 2rem; }
+        .blogs .box-container .box .content h3 {
+          color: #222;
+          font-size: 2rem;
+          text-transform: capitalize; }
+        .blogs .box-container .box .content p {
+          padding: 1rem 0;
+          color: #222;
+          font-size: 1.5rem;
+          line-height: 2;
+          margin-bottom: 0; }
+      .blogs .box-container .box .icons {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .blogs .box-container .box .icons span {
+          color: #222;
+          font-size: 1.4rem;
+          text-transform: capitalize; }
+          .blogs .box-container .box .icons span i {
+            padding-right: .5rem;
+            color: #512a10; }
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -354,7 +455,10 @@ section {
   .login-form form {
     padding: 3rem 2rem; }
     .login-form form h3 {
-      font-size: 1.7rem; } }
+      font-size: 1.7rem; }
+
+  .contact .map {
+    height: 35rem; } }
 @media (max-width: 450px) {
   html {
     font-size: 50%; } }
