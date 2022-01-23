@@ -1,6 +1,6 @@
 21 - Jan - 2022 
 
-# Project Title | [Live-Link](https://taiseen.github.io/coffee-shop-v1-bs-sass)
+# Coffee Shop - v1 | [Live-Link](https://taiseen.github.io/coffee-shop-v1-bs-sass)
 
 ## Inspire & Learning From ==> [this link](https://youtu.be/kCp-iWslG4o)
 
