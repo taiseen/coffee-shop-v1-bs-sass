@@ -1,8 +1,5 @@
 .gallery {
 
-    max-width: 1120px;
-    margin   : 0 auto;
-
     .box-container {
 
         @include grid(30rem);
@@ -10,7 +7,7 @@
 
         .box {
             position: relative;
-            overflow: hidden; 
+            overflow: hidden;
             height  : 25rem;
 
             img {
@@ -39,6 +36,7 @@
                 height          : 100%;
                 width           : 100%;
                 transform       : translateY(100%);
+                transition      : .5s ease;
                 padding         : 4.5rem 2rem 3rem;
                 text-align      : center;
                 background-color: $white;
