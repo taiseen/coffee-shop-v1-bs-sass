@@ -12,6 +12,7 @@
     background-color: rgba(0, 0, 0, .7);
 
 
+    /* When user click then active this section by JS */ 
     &.userClick {
         display: flex;
     }
@@ -22,14 +23,15 @@
         text-align      : center;
         background-color: $white;
         position        : relative;
-        animation       : fadeIn .5s linear;
+        animation       : fadeIn .3s linear;
+        /* fadeIn define at styles.scss section */
 
         #closeBtn {
             position  : absolute;
             top       : -4rem;
             right     : 0;
             cursor    : pointer;
-            transition: .5s ease;
+            transition: .2s ease;
             @include fontStyle(3rem, $white);
 
             &:hover {

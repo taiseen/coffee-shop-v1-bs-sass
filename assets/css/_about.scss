@@ -1,0 +1,39 @@
+.about {
+
+    span {
+        @include fontStyle(2.5rem, $main-color);
+    }
+
+    .title {
+        padding-top: 1rem;
+        @include titleText(2.6rem);
+    }
+
+    p {
+        padding: 1rem 0;
+        @include paragraph(1.5rem);
+    }
+
+    .icons-container {
+        @include flex;
+        margin-top: 3rem;
+
+        .icons {
+            padding         : 2rem;
+            background-color: $light-bg;
+            text-align      : center;
+            flex            : 1 1 14rem;
+
+            i {
+                font-size    : 4rem;
+                margin-bottom: 1.5rem;
+                color        : $main-color;
+            }
+
+            h3{
+                @include titleText(1.5rem);
+            }
+        }
+    }
+
+}

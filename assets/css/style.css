@@ -27,10 +27,13 @@ html {
 section {
   padding: 5rem 1rem; }
 
-@keyframes fadeIn {
-  0% {
-    transform: translateY(-3rem);
-    opacity: 0; } }
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #222;
+  font-size: 3rem;
+  text-transform: capitalize; }
+
 .link-btn {
   margin-top: 1rem;
   padding: 1rem 3rem;
@@ -58,12 +61,44 @@ section {
     color: #FFF;
     border-color: #FFF; }
 
+.menu {
+  background-color: #EEE; }
+  .menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem; }
+    .menu .box-container .box {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: .5rem; }
+      .menu .box-container .box:hover {
+        background-color: #FFF;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        transform: translateY(-1rem); }
+      .menu .box-container .box img {
+        height: 15rem;
+        margin-bottom: 2rem; }
+      .menu .box-container .box h3 {
+        color: #222;
+        font-size: 2rem;
+        text-transform: capitalize; }
+      .menu .box-container .box p {
+        padding: 1rem 0;
+        color: #222;
+        font-size: 1.5rem;
+        line-height: 2;
+        margin-bottom: 0; }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-2.5rem);
+    opacity: 0; } }
 .header {
   padding: 4rem 0;
   z-index: 100;
   /* By scrolling header background color change */ }
   .header.userScroll {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     transition: .5s ease;
     background-color: #512a10; }
   .header .logo {
@@ -96,7 +131,8 @@ section {
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  /* When user click then active this section by JS */ }
   .login-form.userClick {
     display: flex; }
   .login-form form {
@@ -105,13 +141,14 @@ section {
     text-align: center;
     background-color: #FFF;
     position: relative;
-    animation: fadeIn .5s linear; }
+    animation: fadeIn .3s linear;
+    /* fadeIn define at styles.scss section */ }
     .login-form form #closeBtn {
       position: absolute;
       top: -4rem;
       right: 0;
       cursor: pointer;
-      transition: .5s ease;
+      transition: .2s ease;
       font-size: 3rem;
       color: #FFF; }
       .login-form form #closeBtn:hover {
@@ -164,6 +201,39 @@ section {
         color: #512a10; }
         .login-form form .account a:hover {
           text-decoration: underline !important; }
+
+.about span {
+  font-size: 2.5rem;
+  color: #512a10; }
+.about .title {
+  padding-top: 1rem;
+  color: #222;
+  font-size: 2.6rem;
+  text-transform: capitalize; }
+.about p {
+  padding: 1rem 0;
+  color: #222;
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-bottom: 0; }
+.about .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 3rem; }
+  .about .icons-container .icons {
+    padding: 2rem;
+    background-color: #EEE;
+    text-align: center;
+    flex: 1 1 14rem; }
+    .about .icons-container .icons i {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      color: #512a10; }
+    .about .icons-container .icons h3 {
+      color: #222;
+      font-size: 1.5rem;
+      text-transform: capitalize; }
 
 @media (max-width: 991px) {
   html {
