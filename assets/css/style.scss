@@ -81,41 +81,7 @@ section {
     }
 }
 
-.menu {
 
-    background-color: $light-bg;
-
-    .box-container {
-        @include grid(30rem);
-
-        .box {
-            text-align   : center;
-            padding      : 3rem 2rem;
-            border-radius: .5rem;
-
-            &:hover {
-                background-color: $white;
-                box-shadow      : $box-shadow;
-                transform       : translateY(-1rem);
-            }
-
-            img {
-                height       : 15rem;
-                margin-bottom: 2rem;
-            }
-
-            h3 {
-                @include titleText(2rem);
-            }
-
-            p {
-                padding: 1rem 0;
-                @include paragraph(1.5rem);
-            }
-        }
-    }
-
-}
 
 
 @keyframes fadeIn {
@@ -128,4 +94,6 @@ section {
 @import 'header';
 @import 'loginForm';
 @import 'about';
+@import 'menu';
+@import 'gallery';
 @import 'responsiveness';

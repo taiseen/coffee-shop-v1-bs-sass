@@ -1,0 +1,58 @@
+.gallery {
+
+    max-width: 1120px;
+    margin   : 0 auto;
+
+    .box-container {
+
+        @include grid(30rem);
+
+
+        .box {
+            position: relative;
+            overflow: hidden; 
+            height  : 25rem;
+
+            img {
+                height    : 100%;
+                width     : 100%;
+                object-fit: cover;
+            }
+
+            &:hover {
+                box-shadow: $box-shadow;
+                border    : $border;
+
+                img {
+                    transform: translateY(-100%);
+                }
+
+                .content {
+                    transform: translateY(0);
+                }
+            }
+
+            .content {
+                position        : absolute;
+                top             : 0;
+                left            : 0;
+                height          : 100%;
+                width           : 100%;
+                transform       : translateY(100%);
+                padding         : 4.5rem 2rem 3rem;
+                text-align      : center;
+                background-color: $white;
+
+                h3 {
+                    @include titleText(2rem);
+                }
+
+                p {
+                    padding: 1rem 0;
+                    @include paragraph(1.5rem);
+                }
+            }
+        }
+    }
+
+}
