@@ -21,7 +21,7 @@
 
             &:hover {
                 text-decoration      : underline !important;
-                text-underline-offset: .5rem;
+                text-underline-offset: .7rem;
             }
         }
     }
@@ -31,9 +31,4 @@
         margin-left: 2rem;
         cursor     : pointer;
     }
-
-    #menu-btn {
-        display: none;
-    }
-
 }

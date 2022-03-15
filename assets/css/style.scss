@@ -8,7 +8,7 @@
     border            : 0;
     outline           : none;
     list-style        : none;
-    text-decoration   : none !important;
+    text-decoration   : none;
     scroll-behavior   : smooth;
     box-sizing        : border-box;
     font-family       : 'Nunito', sans-serif;
@@ -36,6 +36,8 @@ html {
     }
 }
 
+// Bootstrap Handle that spacing by container class
+// we add just extra touch...
 section {
     padding: 5rem 1rem;
 }
@@ -61,14 +63,13 @@ section {
 }
 
 .home {
-    background         : linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/home-bg.jpg) no-repeat;
+    background         : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(../img/home-bg.jpg) no-repeat;
     background-size    : cover;
     background-position: center;
 
     span {
         @include fontStyle(2.5rem, $white);
     }
-
 
     h3 {
         padding: 1rem 0;
@@ -81,46 +82,10 @@ section {
     }
 }
 
-.footer {
-    text-align: center;
-
-    .logo {
-        @include fontStyle(3rem, $main-color);
-        font-weight: bolder;
-    }
-
-    .credit {
-        margin: 2rem 0;
-        @include titleText(2rem);
-
-        span {
-            text-decoration: underline !important;
-        }
-    }
-
-
-    .share {
-        margin-top: 2rem;
-
-        a {
-            height     : 5rem;
-            width      : 5rem;
-            line-height: 5rem;
-            border     : $border;
-            margin     : 0 .5rem;
-            @include fontStyle(3rem, $main-color);
-
-            &:hover {
-                background-color: $main-color;
-                color           : $white;
-            }
-        }
-    }
-}
-
+// this style using by loginForm section
 @keyframes fadeIn {
     0% {
-        transform: translateY(-2.5rem);
+        transform: translateY(-3rem);
         opacity  : 0;
     }
 }
@@ -134,4 +99,5 @@ section {
 @import 'contact';
 @import 'blogs';
 @import 'newsletter';
+@import 'footer';
 @import 'responsiveness';

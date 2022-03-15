@@ -1,0 +1,36 @@
+.footer {
+    text-align: center;
+
+    .logo {
+        @include fontStyle(3rem, $main-color);
+        font-weight: bolder;
+    }
+
+    .credit {
+        margin: 2rem 0;
+        @include titleText(2rem);
+
+        span {
+            text-decoration: underline !important;
+        }
+    }
+
+
+    .share {
+        margin-top: 2rem;
+
+        a {
+            height     : 5rem;
+            width      : 5rem;
+            line-height: 5rem;
+            border     : $border;
+            margin     : 0 .5rem;
+            @include fontStyle(3rem, $main-color);
+
+            &:hover {
+                background-color: $main-color;
+                color           : $white;
+            }
+        }
+    }
+}
