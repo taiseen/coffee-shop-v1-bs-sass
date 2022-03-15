@@ -1,8 +1,6 @@
 21 - Jan - 2022 
 
-# Coffee Shop - v1 | [Live-Link](https://taiseen.github.io/coffee-shop-v1-bs-sass)
-
-## Inspire & Learning From ==> [this link](https://youtu.be/kCp-iWslG4o)
+# Coffee Shop - v1 | [Live Link](https://taiseen.github.io/coffee-shop-v1-bs-sass)
 
 ## Learning Context
 - SASS ==> variable , nesting , @mixing + @include 
@@ -12,3 +10,5 @@
 - Div Opacity Hover Effect 
 - Responsiveness
 - Google Map add
+
+Inspire by learning from[.](https://youtu.be/kCp-iWslG4o)
