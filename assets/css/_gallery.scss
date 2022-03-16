@@ -1,9 +1,8 @@
 .gallery {
 
     .box-container {
-
+        
         @include grid(30rem);
-
 
         .box {
             position: relative;
@@ -52,5 +51,4 @@
             }
         }
     }
-
 }
